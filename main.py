@@ -1,12 +1,13 @@
 from fastapi import HTTPException, status
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, JSONResponse, Response
-from app.squemas import User
+from app.routers.riseServer import router as router_server
 import uvicorn
 
 
 app = FastAPI()
 
+app.include_router(router_server)
 #Allow connections from frontend
 
 @app.middleware("http")

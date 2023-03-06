@@ -43,7 +43,7 @@ def run(ruta_world,port):
         kpi = str(i.get("Name"))
         if "trainee" not in kpi and "Trainee" not in kpi:
             value = int(i.get("Score"))
-            data[kpi] = value
+            data[kpi] = str(value)
     
     data = dict(sorted(data.items()))
 
