@@ -1,0 +1,116 @@
+@echo off
+
+cd "D:\kronos\10\Doordash java"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+
+cd "D:\kronos\10\Doordash java - Copy "
+
+start Start.bat
+
+timeout /t 3 /nobreak
+
+cd "D:\kronos\10\Doordash java - Copy (2)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+
+cd "D:\kronos\10\Doordash java - Copy (3)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+
+cd "D:\kronos\10\Doordash java - Copy (4)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+
+cd "D:\kronos\10\Doordash java - Copy (5)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+
+cd "D:\kronos\10\Doordash java - Copy (6)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (7)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (8)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (9)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (10)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (11)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (12)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (13)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (14)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (15)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (16)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (17)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (18)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (19)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (20)"
+
+start Start.bat
+
+timeout /t 3 /nobreak
+cd "D:\kronos\10\Doordash java - Copy (21)"
+
+start Start.bat
