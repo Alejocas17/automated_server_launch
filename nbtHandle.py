@@ -26,7 +26,7 @@ def run(ruta_world,port):
     
         
     # ruta_player = f"{ruta_world}\playerdata"
-    ruta_score = f"{ruta_world}\data\scoreboard.dat"
+    ruta_score = f"{ruta_world}\world\data\scoreboard.dat"
     
         # Crear un objeto de archivo NBT
     score_nbt = nbtlib.load(ruta_score)

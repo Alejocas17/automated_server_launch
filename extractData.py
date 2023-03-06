@@ -4,9 +4,9 @@ import sys
 import os
 import pandas as pd
 
-def run(n):
+def run(n,path_world):
     path_worlds = os.listdir(r'.')
-    path_world = r'./world'
+    #path_world = r'./world'
     df=pd.DataFrame()
         
     for i in range(1,n):
@@ -35,4 +35,4 @@ def get_data(world_path,port,df):
 
 
 if __name__ == "__main__":
-    run(int(sys.argv[1]))
+    run(int(sys.argv[1]),str(sys.argv[2]))

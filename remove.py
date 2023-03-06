@@ -1,8 +1,8 @@
 import os, sys, shutil
 
-def run(n):
+def run(n,path_world):
     path_worlds = os.listdir(r'.')
-    path_world = r'./world'
+    #path_world = r'./world'
         
     for i in range(n):
         try:
@@ -15,4 +15,4 @@ def run(n):
         archivo.write("@echo off\n")
     
 if __name__ == "__main__":
-    run(int(sys.argv[1]))
+    run(int(sys.argv[1]),str(sys.argv[2]))

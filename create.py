@@ -1,9 +1,9 @@
 import os, sys, shutil
 
 ##Main function
-def run(n):    
+def run(n,path_world):    
     path_worlds = os.listdir(r'.')
-    path_world = r'./world'
+    #path_world = r'./world'
     
     for i in range(n):
         new_path = path_world + str(i)
@@ -45,9 +45,10 @@ def create_executable(n,new_path):
 
     # Agregar las líneas n veces
     
-    contenido.extend([f"\ncd {new_path} \n",
+    contenido.extend([f"\n cd "f"{new_path}"" \n",
                     "start Start.bat\n",
-                    "timeout /t 3 /nobreak\n"])
+                    "timeout /t 3 /nobreak\n",
+                    "cd ..\n"])
 
     # Escribir el contenido actualizado en el archivo con la extensión .bat
     # print(ruta_archivo)
@@ -58,7 +59,7 @@ def create_executable(n,new_path):
 
 ##entrypoint
 if __name__ == '__main__':
-    run(int(sys.argv[1]))
+    run(int(sys.argv[1]),str(sys.argv[2]))
     
 
 
