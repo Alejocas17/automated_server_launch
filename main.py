@@ -3,8 +3,12 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, JSONResponse, Response
 from app.routers.riseServer import router as router_server
 import uvicorn
+from app.db.database import Base, engine
 
+def create_tables():
+    Base.metadata.create_all(bind=engine)
 
+create_tables()
 app = FastAPI()
 
 app.include_router(router_server)
