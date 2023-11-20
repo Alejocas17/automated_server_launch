@@ -16,9 +16,10 @@ def run(n,path_world):
         except ValueError as e:
             print(e)
             pass
-    print(df)
+    # print(df)
     
     df.to_csv('results.csv',index=False)
+    return df
 
 
 def get_data(world_path,port,df):

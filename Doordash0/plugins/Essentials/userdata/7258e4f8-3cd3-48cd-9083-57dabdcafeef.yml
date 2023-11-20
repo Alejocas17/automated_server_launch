@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 186.154.32.198
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1651786015840
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1651858207857
+  login: 1651857832448
+money: '0'
+last-account-name: Trainee21T
+logoutlocation:
+  world: fb9931e6-70f2-44d2-bd80-f282ad746d15
+  world-name: world
+  x: -1317.4524748138838
+  y: 96.0
+  z: -4019.8141855197264
+  yaw: -282.345458984375
+  pitch: 38.40007019042969
+lastlocation:
+  world: fb9931e6-70f2-44d2-bd80-f282ad746d15
+  world-name: world
+  x: -1397.7354905768757
+  y: 107.5546165731281
+  z: -4007.8782580331813
+  yaw: 302.9416198730469
+  pitch: -18.150039672851562

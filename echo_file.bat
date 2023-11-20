@@ -14,6 +14,7 @@ cd ..
 start Start.bat
 timeout /t 3 /nobreak
 cd ..
+<<<<<<< HEAD
 
  cd ./Doordash3 
 start Start.bat
@@ -79,3 +80,5 @@ cd ..
 start Start.bat
 timeout /t 3 /nobreak
 cd ..
+=======
+>>>>>>> 468aa64c1e2dcd1114f51936e5bda439b82aeeb4
