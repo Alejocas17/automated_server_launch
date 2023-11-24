@@ -57,10 +57,10 @@ def run(ruta_world,port):
     # print(df_data)
     return df_data
 
-def by_user(ruta_world,port,username):
+def by_user(ruta_world:str,port:str,username:str):
     import pandas as pd
 
-    ruta_score = f"{ruta_world}\world\data\scoreboard.dat"
+    ruta_score = f"{ruta_world}{port}\world\data\scoreboard.dat"
     
         # Crear un objeto de archivo NBT
     score_nbt = nbtlib.load(ruta_score)
@@ -75,15 +75,16 @@ def by_user(ruta_world,port,username):
     
     for i in score_player:
         kpi = str(i.get("Name"))
-        if "trainee" not in kpi and "Trainee" not in kpi:
+        if "kpi" in kpi:
             value = int(i.get("Score"))
             data[kpi] = str(value)
     
     data = dict(sorted(data.items()))
+    print("los kpis son:",data)
 
-    df_data = pd.DataFrame(data.items(), columns=["KPI", "Score"])
-    df_data["User"] = username
-    df_data=df_data.iloc[:,[2,0,1]]
+    df_data = pd.DataFrame(data.items(), columns=["kpi", "score"])
+    df_data["world"] = ruta_world.split('/')[1]
+    df_data=df_data.iloc[:,[0,1,2]]
     # print(df_data)
     return df_data
     

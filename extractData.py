@@ -17,8 +17,8 @@ def run(userName):
 
         # Obtener el valor de la columna "puerto" para esa fila
         port = fila_usuario['Puerto'].values[0]
-        performance = get_data_by_user(path_world,port,userName)
-        print(performance,userName)
+        port = str(port)
+        performance = get_data_by_user(path_world,port.split('.')[0],userName)
         return performance
     return False
 
@@ -37,7 +37,6 @@ def get_data_by_user(world_path,port,userName):
 
     for index, row in list(data.iterrows()):
         list_dict.append(dict(row))
-    print(list_dict)
     return list_dict
     
     
