@@ -6,7 +6,11 @@ def run(n,path_world):
     #path_world = r'./world'
     
     for i in range(n):
-        new_path = path_world + str(i)
+        if len(str(i))==1:
+            nuevo_puerto = "2560"+str(i)
+        if len(str(i))==2:
+            nuevo_puerto = "256"+str(i)
+        new_path = path_world + nuevo_puerto
         print(f'Creadondo {new_path} ...')
         shutil.copytree(path_world, new_path)
         reeplacePort(i, new_path)

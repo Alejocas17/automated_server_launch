@@ -8,14 +8,14 @@ def run(ruta_world,port):
     import pandas as pd
 
     # leer archivo excel
-    df = pd.read_excel('wave.xlsx', header=6)
+    df = pd.read_excel('wave.xlsx', header=1)
 
     # extraer dos columnas a partir de la fila 2
-    columnas = df[['Nombre', 'Puerto']].dropna()
-    columnas['Puerto'] = columnas['Puerto'].astype(int)
+    columnas = df[['netUser', 'Port']].dropna()
+    columnas['netUser'] = columnas['Port'].astype(int)
     
-    nombre=columnas['Nombre'].values
-    puerto = columnas['Puerto'].values
+    nombre=columnas['netUser'].values
+    puerto = columnas['Port'].values
     # data = { : columnas['Puerto'].values}
     agent = {}
     for i in range(len(nombre)):
@@ -26,8 +26,8 @@ def run(ruta_world,port):
     
         
     # ruta_player = f"{ruta_world}\playerdata"
-    ruta_score = f"{ruta_world}\world\data\scoreboard.dat"
-    
+    # ruta_score = f"{ruta_world}\world\data\scoreboard.dat" 
+    ruta_score = f"{ruta_world}/world/data/scoreboard.dat" 
         # Crear un objeto de archivo NBT
     score_nbt = nbtlib.load(ruta_score)
     # player_nbt = nbtlib.load(ruta_player)
@@ -59,9 +59,10 @@ def run(ruta_world,port):
 
 def by_user(ruta_world:str,port:str,username:str):
     import pandas as pd
-
-    ruta_score = f"{ruta_world}{port}\world\data\scoreboard.dat"
-    
+    ##path for winodows
+    # ruta_score = f"{ruta_world}{port}\world\data\scoreboard.dat"
+    ##path for macos
+    ruta_score = f"{ruta_world}{port}/world/data/scoreboard.dat"
         # Crear un objeto de archivo NBT
     score_nbt = nbtlib.load(ruta_score)
     # player_nbt = nbtlib.load(ruta_player)
@@ -83,7 +84,7 @@ def by_user(ruta_world:str,port:str,username:str):
     print("los kpis son:",data)
 
     df_data = pd.DataFrame(data.items(), columns=["kpi", "score"])
-    df_data["world"] = ruta_world.split('/')[1]
+    df_data["GameName"] = ruta_world.split('/')[1]
     df_data=df_data.iloc[:,[0,1,2]]
     # print(df_data)
     return df_data

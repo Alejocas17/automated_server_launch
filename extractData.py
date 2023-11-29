@@ -9,14 +9,14 @@ def run(userName):
     path_worlds = os.listdir(r'.')
     path_world = r'./Doordash'
     # df=pd.DataFrame()
-    df = pd.read_excel('wave.xlsx', header=6)
+    df = pd.read_excel('wave.xlsx', header=0)
     filtro_usuario = df['netUser'] == userName
     if filtro_usuario.any():
         # Obtener la fila completa para el usuario dado
         fila_usuario = df[filtro_usuario]
 
         # Obtener el valor de la columna "puerto" para esa fila
-        port = fila_usuario['Puerto'].values[0]
+        port = fila_usuario['Port'].values[0]
         port = str(port)
         performance = get_data_by_user(path_world,port.split('.')[0],userName)
         return performance

@@ -1,3 +1,3 @@
 @echo on
 
-python .\remove.py 21 "./Doordash" && timeout /t 1 && python .\create.py 21 "./Doordash"
+python .\remove.py 2 "./Doordash" && timeout /t 1 && python .\create.py 2 "./Doordash"
